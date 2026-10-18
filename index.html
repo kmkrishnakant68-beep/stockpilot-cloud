@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>StockPilot | Cloud Technical Radar</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#f1f5f9;background:#0b1220;color-scheme:dark}
+    *{box-sizing:border-box}body{margin:0}button,input{font:inherit}a{color:#93c5fd}
+    .wrap{max-width:1220px;margin:auto;padding:30px 18px 80px}
+    .eyebrow{color:#71abfa;letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}
+    header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+    h1{font-size:clamp(30px,4vw,46px);letter-spacing:-.055em;margin:6px 0 12px}h2{font-size:18px;margin:0 0 6px}
+    p{color:#a6b3c8;line-height:1.5;margin:0}
+    .toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    button{cursor:pointer;border:1px solid #34465e;border-radius:9px;padding:11px 16px;color:white;background:#1d3350;font-weight:700}
+    button:hover{background:#29486b}
+    .clock{font-size:13px;color:#9aaac3}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px}
+    .stat,.panel{background:#111e30;border:1px solid #26364c;border-radius:15px;padding:20px}
+    .stat .label{font-size:12px;color:#96a8c1}.stat .value{font-size:30px;font-weight:800;margin-top:6px;font-variant-numeric:tabular-nums}
+    .red{color:#fb9292}.green{color:#5ee2b1}.gold{color:#f7c476}
+    .panel{margin-bottom:16px}.panelbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:15px}
+    input{background:#0c1728;border:1px solid #32445d;border-radius:9px;color:white;padding:11px;width:min(100%,270px)}
+    .scroll{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{text-align:left;color:#9eabc0;font-size:11px;text-transform:uppercase;letter-spacing:.045em;border-bottom:1px solid #2b3d53;padding:14px 12px}
+    td{padding:15px 12px;border-bottom:1px solid #26354a;font-size:14px;font-variant-numeric:tabular-nums}tr:last-child td{border-bottom:0}
+    .ticker{font-weight:800;color:#ecf3ff}.sub{font-size:11px;color:#8da0ba;margin-top:3px}
+    .pill{display:inline-block;border-radius:7px;padding:6px 9px;font-size:11px;font-weight:750;background:#1e344e;color:#bdd7f8}
+    .pill.bad{background:#552b34;color:#ffb1b6}.pill.ok{background:#1e483e;color:#86e3ba}.pill.caution{background:#594528;color:#f8d48d}
+    .empty{text-align:center;padding:30px;color:#9daec8}.alerts{display:flex;flex-direction:column;gap:9px}
+    .alert{border:1px solid #324157;background:#142238;border-radius:9px;padding:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .alert strong{color:#ffc2c2}.foot{font-size:12px;color:#8997af;max-width:980px;margin-top:16px;line-height:1.65}
+    .spark{width:92px;height:31px}.warning{background:#412f22;border:1px solid #8b683e;border-radius:10px;padding:14px;margin:0 0 17px;color:#ffe1b0;font-size:13px;display:none}
+    @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:15px}.stat .value{font-size:25px}.wrap{padding:20px 12px 55px}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">StockPilot / cloud edition</div>
+      <h1>Technical Radar <span style="font-weight:400;color:#7191b9">↗</span></h1>
+      <p>Watchlist prices, 50-day / 200-day averages and newly detected downward crosses.</p>
+    </div>
+    <div class="toolbar"><div class="clock" id="updated">Awaiting first scan</div><button id="refresh">Refresh display ↻</button></div>
+  </header>
+  <div class="warning" id="warning"></div>
+  <section class="grid" aria-label="Stock radar summary">
+    <div class="stat"><div class="label">Stocks checked</div><div class="value" id="total">—</div></div>
+    <div class="stat"><div class="label">Below 50-day SMA</div><div class="value gold" id="below50">—</div></div>
+    <div class="stat"><div class="label">Below 200-day SMA</div><div class="value red" id="below200">—</div></div>
+    <div class="stat"><div class="label">New crosses (this scan)</div><div class="value red" id="crosses">—</div></div>
+  </section>
+  <section class="panel">
+    <div class="panelbar"><div><h2>Stock watchlist</h2><p>Prices may be delayed. A crossover during trading hours is provisional.</p></div><input id="filter" aria-label="Filter tickers" placeholder="Find a ticker..." autocomplete="off"></div>
+    <div class="scroll"><table><thead><tr><th>Symbol</th><th>Latest price</th><th>Trend</th><th>50D SMA</th><th>vs 50D</th><th>200D SMA</th><th>vs 200D</th><th>50D signal</th><th>200D signal</th></tr></thead><tbody id="rows"><tr><td colspan="9" class="empty">Data will appear after the first cloud run.</td></tr></tbody></table></div>
+  </section>
+  <section class="panel">
+    <div class="panelbar"><div><h2>Moving-average crossing log</h2><p>Recorded changes from above to below the 50D or 200D SMA.</p></div></div>
+    <div class="alerts" id="alerts"><div class="empty">No crosses have been recorded yet.</div></div>
+  </section>
+  <p class="foot">This page displays cached outputs from GitHub Actions, not an exchange market-data stream. GitHub jobs may run late or skip a scheduled execution. Yahoo Finance data may be delayed, rate-limited or unavailable. Provisional crosses may reverse before the market closes. No buy/sell recommendation is implied by any technical signal. For general research only.</p>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let all=[];
+function money(x){return typeof x==='number' && Number.isFinite(x)?'$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—'}
+function percent(x){return typeof x==='number' && Number.isFinite(x)?(x>0?'+':'')+x.toFixed(2)+'%':'—'}
+function cls(x){return typeof x==='number'?(x<0?'red':'green'):''}
+function txt(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function badge(s){if(!s||s==='INSUFFICIENT HISTORY')return '<span class="pill">'+txt(s||'N/A')+'</span>';let c=s==='CROSSED BELOW'?'bad':s==='BELOW'?'caution':'ok';return '<span class="pill '+c+'">'+txt(s)+'</span>'}
+function spark(vals){if(!Array.isArray(vals)||vals.length<2)return '—';const lo=Math.min(...vals),hi=Math.max(...vals),range=hi-lo||1;const points=vals.map((v,i)=>(4+i*84/(vals.length-1)).toFixed(1)+','+(26-(v-lo)*20/range).toFixed(1)).join(' ');const c=vals.at(-1)>=vals[0]?'#61d7ac':'#fb9292';return '<svg class="spark" viewBox="0 0 92 31" aria-label="Recent 30 trading-day trend"><polyline fill="none" stroke="'+c+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="'+points+'"/></svg>'}
+function draw(){const search=$('filter').value.trim().toUpperCase(),stocks=all.filter(s=>s.ticker?.includes(search));$('rows').innerHTML=stocks.length?stocks.map(s=>{
+const err=s.status!=='ok';return '<tr><td><span class="ticker">'+txt(s.ticker)+'</span><div class="sub">'+txt(s.as_of_date||'')+'</div></td>'+(err?'<td colspan="8" class="red">'+txt(s.status)+'</td>':
+'<td>'+money(s.price)+'</td><td>'+spark(s.trend30)+'</td><td>'+money(s.ma50)+'</td><td class="'+cls(s.distance50_pct)+'">'+percent(s.distance50_pct)+'</td><td>'+money(s.ma200)+'</td><td class="'+cls(s.distance200_pct)+'">'+percent(s.distance200_pct)+'</td><td>'+badge(s.signal50)+'</td><td>'+badge(s.signal200)+'</td>')+'</tr>'}).join(''):'<tr><td colspan="9" class="empty">No matching stocks, or no scan has run yet.</td></tr>'}
+function renderAlerts(events){$('alerts').innerHTML=events.length?events.slice(0,30).map(a=>'<div class="alert"><div><strong>'+txt(a.ticker)+' — '+txt(a.event)+'</strong><div class="sub">'+txt(a.price_mode||'')+'</div></div><div>'+money(Number(a.price))+' <span class="sub">at SMA '+money(Number(a.moving_average))+'</span><div class="sub">'+txt(a.checked_at_utc||'')+'</div></div></div>').join(''):'<div class="empty">No downward crosses recorded yet.</div>'}
+async function load(){ $('refresh').disabled=true; try {const noCache='?v='+Date.now();const [a,b]=await Promise.all([fetch('./data/latest_signals.json'+noCache,{cache:'no-store'}),fetch('./data/alert_history.json'+noCache,{cache:'no-store'})]);if(!a.ok||!b.ok)throw Error('Dashboard data is not available yet. Run the GitHub Action to generate it.');const data=await a.json(),hist=await b.json();all=Array.isArray(data.stocks)?data.stocks:[];const valid=all.filter(s=>s.status==='ok');$('total').textContent=valid.length||'0';$('below50').textContent=valid.filter(s=>s.below50===true).length;$('below200').textContent=valid.filter(s=>s.below200===true).length;$('crosses').textContent=valid.reduce((n,s)=>n+Number(s.crossed_below50===true)+Number(s.crossed_below200===true),0);const generated=data.generated_at_utc;$('updated').textContent=generated?'Scan: '+new Date(generated).toLocaleString():'Awaiting first scan';const errors=all.filter(s=>s.status!=='ok');const stale=generated&&(Date.now()-Date.parse(generated)>1000*60*120);$('warning').style.display=errors.length||stale?'block':'none';$('warning').textContent=[errors.length?`${errors.length} symbols could not be updated.`:'',stale?'Last successful scan is more than two hours old.':''].filter(Boolean).join(' ');draw();renderAlerts(Array.isArray(hist.alerts)?hist.alerts:[])}catch(e){$('warning').style.display='block';$('warning').textContent=e.message;}finally{$('refresh').disabled=false}}
+$('refresh').addEventListener('click',load);$('filter').addEventListener('input',draw);load();setInterval(load,90_000);
+</script>
+</body>
+</html>
