@@ -1,0 +1,91 @@
+name: StockPilot cloud scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Non-round times reduce congestion. New York timezone handles US DST.
+    - cron: '47 9 * * 1-5'
+      timezone: America/New_York
+    - cron: '17,47 10-15 * * 1-5'
+      timezone: America/New_York
+    - cron: '47 16 * * 1-5'
+      timezone: America/New_York
+
+# Don't overlap scans or cancel one while it is saving state.
+concurrency:
+  group: stockpilot-market-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install requirements
+        run: python -m pip install -r requirements.txt
+
+      - name: Update quotes and technical signals
+        run: python stockpilot_ma_tracker.py --output stockpilot_data
+
+      # Telegram is optional; missing secrets simply disable alerts.
+      - name: Send Telegram alerts for newly detected crosses
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python telegram_alerts.py
+
+      - name: Prepare website files
+        run: |
+          mkdir -p public/data
+          cp stockpilot_data/latest_signals.json public/data/latest_signals.json
+          cp stockpilot_data/alert_history.json public/data/alert_history.json
+
+      - name: Save scan state and results for next run
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f stockpilot_data/state.json stockpilot_data/latest_signals.json stockpilot_data/latest_signals.csv stockpilot_data/new_alerts.json stockpilot_data/alert_history.json public/data/latest_signals.json public/data/alert_history.json
+          if [ -f stockpilot_data/alerts.csv ]; then git add -f stockpilot_data/alerts.csv; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh StockPilot market signals [skip ci]'
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
