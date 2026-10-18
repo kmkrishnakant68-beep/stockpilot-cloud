@@ -1,0 +1,16 @@
+# Edit this list to match your StockPilot watchlist (one ticker per line)
+MSFT
+GOOGL
+NVDA
+AMD
+META
+AVGO
+VOO
+SMH
+DRAM
+ASML
+GOOG
+TSM
+MU
+IREN
+NBIS
