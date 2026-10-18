@@ -1,0 +1,62 @@
+{
+  "MSFT": {
+    "below50": false,
+    "below200": false
+  },
+  "GOOGL": {
+    "below50": true,
+    "below200": true
+  },
+  "NVDA": {
+    "below50": true,
+    "below200": false
+  },
+  "AMD": {
+    "below50": true,
+    "below200": false
+  },
+  "META": {
+    "below50": false,
+    "below200": false
+  },
+  "AVGO": {
+    "below50": true,
+    "below200": true
+  },
+  "VOO": {
+    "below50": true,
+    "below200": false
+  },
+  "SMH": {
+    "below50": true,
+    "below200": false
+  },
+  "DRAM": {
+    "below50": true,
+    "below200": null
+  },
+  "ASML": {
+    "below50": true,
+    "below200": false
+  },
+  "GOOG": {
+    "below50": true,
+    "below200": true
+  },
+  "TSM": {
+    "below50": true,
+    "below200": false
+  },
+  "MU": {
+    "below50": true,
+    "below200": false
+  },
+  "IREN": {
+    "below50": true,
+    "below200": true
+  },
+  "NBIS": {
+    "below50": true,
+    "below200": true
+  }
+}
