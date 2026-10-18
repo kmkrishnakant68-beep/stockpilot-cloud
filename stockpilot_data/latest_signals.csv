@@ -1,16 +1,16 @@
 ticker,as_of_date,price,ma50,ma200,distance50_pct,distance200_pct,signal50,signal200,below50,below200,crossed_below50,crossed_below200,price_mode,checked_at_utc,status
-MSFT,2026-10-16,529.05,505.5324,435.252,4.65,21.55,AT / ABOVE,AT / ABOVE,False,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-GOOGL,2026-10-16,340.59,344.5804,340.9006,-1.16,-0.09,CROSSED BELOW,CROSSED BELOW,True,True,True,True,completed daily close,2026-10-18T21:02:53+00:00,ok
-NVDA,2026-10-16,214.13,223.0766,202.971,-4.01,5.5,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-AMD,2026-10-16,528.75,537.1384,394.2475,-1.56,34.12,CROSSED BELOW,AT / ABOVE,True,False,True,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-META,2026-10-16,709.33,655.2402,631.9771,8.25,12.24,AT / ABOVE,AT / ABOVE,False,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-AVGO,2026-10-16,328.75,365.7256,368.187,-10.11,-10.71,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-VOO,2026-10-16,701.61,706.623,666.6858,-0.71,5.24,CROSSED BELOW,AT / ABOVE,True,False,True,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-SMH,2026-10-16,539.79,579.03,511.3455,-6.78,5.56,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-DRAM,2026-10-16,46.45,57.1202,,-18.68,,BELOW,INSUFFICIENT HISTORY,True,,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-ASML,2026-10-16,1641.52,1739.6302,1577.2161,-5.64,4.08,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-GOOG,2026-10-16,336.91,341.4456,339.1273,-1.33,-0.65,CROSSED BELOW,CROSSED BELOW,True,True,True,True,completed daily close,2026-10-18T21:02:53+00:00,ok
-TSM,2026-10-16,412.61,434.3638,395.0466,-5.01,4.45,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-MU,2026-10-16,878.84,983.1178,717.8392,-10.61,22.43,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-IREN,2026-10-16,26.99,40.9912,45.3675,-34.16,-40.51,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T21:02:53+00:00,ok
-NBIS,2026-10-16,165.47,222.8033,174.0398,-25.73,-4.92,BELOW,CROSSED BELOW,True,True,False,True,completed daily close,2026-10-18T21:02:53+00:00,ok
+MSFT,2026-10-16,529.05,505.5324,435.252,4.65,21.55,AT / ABOVE,AT / ABOVE,False,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+GOOGL,2026-10-16,340.59,344.5804,340.9006,-1.16,-0.09,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+NVDA,2026-10-16,214.13,223.0766,202.971,-4.01,5.5,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+AMD,2026-10-16,528.75,537.1384,394.2475,-1.56,34.12,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+META,2026-10-16,709.33,655.2402,631.9771,8.25,12.24,AT / ABOVE,AT / ABOVE,False,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+AVGO,2026-10-16,328.75,365.7256,368.187,-10.11,-10.71,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+VOO,2026-10-16,701.61,706.623,666.6858,-0.71,5.24,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+SMH,2026-10-16,539.79,579.03,511.3455,-6.78,5.56,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+DRAM,2026-10-16,46.45,57.1202,,-18.68,,BELOW,INSUFFICIENT HISTORY,True,,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+ASML,2026-10-16,1641.52,1739.6302,1577.2161,-5.64,4.08,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+GOOG,2026-10-16,336.91,341.4456,339.1273,-1.33,-0.65,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+TSM,2026-10-16,412.61,434.3638,395.0466,-5.01,4.45,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+MU,2026-10-16,878.84,983.1178,717.8392,-10.61,22.43,BELOW,AT / ABOVE,True,False,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+IREN,2026-10-16,26.99,40.9912,45.3675,-34.16,-40.51,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
+NBIS,2026-10-16,165.47,222.8033,174.0398,-25.73,-4.92,BELOW,BELOW,True,True,False,False,completed daily close,2026-10-18T23:46:04+00:00,ok
