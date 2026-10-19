@@ -5,14 +5,14 @@
   },
   "GOOGL": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "NVDA": {
     "below50": true,
     "below200": false
   },
   "AMD": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "META": {
@@ -41,7 +41,7 @@
   },
   "GOOG": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "TSM": {
     "below50": true,
