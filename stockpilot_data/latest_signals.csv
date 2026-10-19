@@ -1,16 +1,16 @@
 ticker,as_of_date,price,ma50,ma200,distance50_pct,distance200_pct,signal50,signal200,below50,below200,crossed_below50,crossed_below200,price_mode,checked_at_utc,status
-MSFT,2026-10-19,534.43,506.2212,435.506,5.57,22.71,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-GOOGL,2026-10-19,345.71,344.4086,341.0642,0.38,1.36,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-NVDA,2026-10-19,217.915,222.9557,203.1281,-2.26,7.28,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-AMD,2026-10-19,541.2901,538.297,395.8832,0.56,36.73,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-META,2026-10-19,705.31,657.5044,632.2032,7.27,11.56,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-AVGO,2026-10-19,335.726,363.8849,368.1351,-7.74,-8.8,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-VOO,2026-10-19,706.0799,706.5304,667.0806,-0.06,5.85,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-SMH,2026-10-19,551.7,578.41,512.3033,-4.62,7.69,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-DRAM,2026-10-19,48.48,57.0778,,-15.06,,BELOW,INSUFFICIENT HISTORY,True,,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-ASML,2026-10-19,1661.649,1738.0434,1580.175,-4.4,5.16,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-GOOG,2026-10-19,341.53,341.2068,339.266,0.09,0.67,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-TSM,2026-10-19,423.165,434.4263,395.643,-2.59,6.96,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-MU,2026-10-19,909.94,983.7652,720.9618,-7.5,26.21,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-IREN,2026-10-19,28.035,40.7273,45.3188,-31.16,-38.14,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
-NBIS,2026-10-19,171.41,222.4721,174.4783,-22.95,-1.76,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:28:27+00:00,ok
+MSFT,2026-10-19,534.19,506.2164,435.5048,5.53,22.66,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+GOOGL,2026-10-19,345.7507,344.4094,341.0644,0.39,1.37,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+NVDA,2026-10-19,217.99,222.9572,203.1285,-2.23,7.32,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+AMD,2026-10-19,541.05,538.2922,395.882,0.51,36.67,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+META,2026-10-19,705.59,657.51,632.2046,7.31,11.61,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+AVGO,2026-10-19,335.79,363.8862,368.1355,-7.72,-8.79,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+VOO,2026-10-19,706.08,706.5304,667.0806,-0.06,5.85,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+SMH,2026-10-19,551.58,578.4076,512.3027,-4.64,7.67,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+DRAM,2026-10-19,48.51,57.0784,,-15.01,,BELOW,INSUFFICIENT HISTORY,True,,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+ASML,2026-10-19,1660.62,1738.0228,1580.1699,-4.45,5.09,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+GOOG,2026-10-19,341.55,341.2072,339.2661,0.1,0.67,AT / ABOVE,AT / ABOVE,False,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+TSM,2026-10-19,423.2984,434.429,395.6437,-2.56,6.99,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+MU,2026-10-19,910.08,983.768,720.9625,-7.49,26.23,BELOW,AT / ABOVE,True,False,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+IREN,2026-10-19,28.03,40.7272,45.3188,-31.18,-38.15,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
+NBIS,2026-10-19,171.4737,222.4734,174.4786,-22.92,-1.72,BELOW,BELOW,True,True,False,False,indicative session quote (may be delayed),2026-10-19T19:29:53+00:00,ok
