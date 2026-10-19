@@ -64,7 +64,7 @@ jobs:
           if [ -f stockpilot_data/alerts.csv ]; then git add -f stockpilot_data/alerts.csv; fi
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh StockPilot market signals [skip ci]'
-            git pull --rebase -X theirs origin mai
+            git pull --rebase -X theirs origin main
             git push
           fi
 
