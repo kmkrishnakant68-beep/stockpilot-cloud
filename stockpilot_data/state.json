@@ -4,7 +4,7 @@
     "below200": false
   },
   "GOOGL": {
-    "below50": false,
+    "below50": true,
     "below200": false
   },
   "NVDA": {
@@ -40,7 +40,7 @@
     "below200": false
   },
   "GOOG": {
-    "below50": false,
+    "below50": true,
     "below200": false
   },
   "TSM": {

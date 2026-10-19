@@ -1,6 +1,22 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-10-19T19:58:50+00:00",
+      "ticker": "GOOG",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "339.995",
+      "moving_average": "341.1761",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-10-19T19:58:50+00:00",
+      "ticker": "GOOGL",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "344.21",
+      "moving_average": "344.3786",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
       "checked_at_utc": "2026-10-18T21:02:53+00:00",
       "ticker": "NBIS",
       "event": "CROSSED BELOW 200D SMA",
