@@ -1,6 +1,14 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-10-19T23:57:40+00:00",
+      "ticker": "AMD",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "538.05",
+      "moving_average": "538.2322",
+      "price_mode": "completed daily close"
+    },
+    {
       "checked_at_utc": "2026-10-19T19:58:50+00:00",
       "ticker": "GOOG",
       "event": "CROSSED BELOW 50D SMA",
