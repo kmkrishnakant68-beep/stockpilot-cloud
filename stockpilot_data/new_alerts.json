@@ -1,13 +1,4 @@
 {
-  "generated_at_utc": "2026-10-20T21:55:52+00:00",
-  "alerts": [
-    {
-      "checked_at_utc": "2026-10-20T21:55:52+00:00",
-      "ticker": "AMD",
-      "event": "CROSSED BELOW 50D SMA",
-      "price": 534.74,
-      "moving_average": 539.5358,
-      "price_mode": "completed daily close"
-    }
-  ]
+  "generated_at_utc": "2026-10-20T23:27:07+00:00",
+  "alerts": []
 }
