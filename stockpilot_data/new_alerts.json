@@ -1,21 +1,4 @@
 {
-  "generated_at_utc": "2026-10-20T18:07:37+00:00",
-  "alerts": [
-    {
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
-      "ticker": "GOOGL",
-      "event": "CROSSED BELOW 200D SMA",
-      "price": 340.6,
-      "moving_average": 341.1838,
-      "price_mode": "indicative session quote (may be delayed)"
-    },
-    {
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
-      "ticker": "GOOG",
-      "event": "CROSSED BELOW 200D SMA",
-      "price": 336.7,
-      "moving_average": 339.366,
-      "price_mode": "indicative session quote (may be delayed)"
-    }
-  ]
+  "generated_at_utc": "2026-10-20T18:29:38+00:00",
+  "alerts": []
 }

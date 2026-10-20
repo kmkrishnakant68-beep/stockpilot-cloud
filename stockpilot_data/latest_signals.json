@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-10-20T18:07:37+00:00",
+  "generated_at_utc": "2026-10-20T18:29:38+00:00",
   "provider": "Yahoo Finance via yfinance (quotes may be delayed)",
   "stocks": [
     {
       "ticker": "MSFT",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 532.362,
+      "price": 532.295,
       "status": "ok",
       "trend30": [
         491.65,
@@ -39,15 +39,15 @@
         539.44,
         529.05,
         533.52,
-        532.362
+        532.295
       ],
-      "ma50": 506.729,
-      "distance50_pct": 5.06,
+      "ma50": 506.7277,
+      "distance50_pct": 5.05,
       "below50": false,
       "crossed_below50": false,
       "signal50": "AT / ABOVE",
-      "ma200": 435.7986,
-      "distance200_pct": 22.16,
+      "ma200": 435.7983,
+      "distance200_pct": 22.14,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -55,9 +55,9 @@
     {
       "ticker": "GOOGL",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 340.6,
+      "price": 340.41,
       "status": "ok",
       "trend30": [
         330.65,
@@ -89,25 +89,25 @@
         349.22,
         340.59,
         344.18,
-        340.6
+        340.41
       ],
-      "ma50": 344.0396,
-      "distance50_pct": -1.0,
+      "ma50": 344.0358,
+      "distance50_pct": -1.05,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 341.1838,
-      "distance200_pct": -0.17,
+      "ma200": 341.1828,
+      "distance200_pct": -0.23,
       "below200": true,
-      "crossed_below200": true,
-      "signal200": "CROSSED BELOW"
+      "crossed_below200": false,
+      "signal200": "BELOW"
     },
     {
       "ticker": "NVDA",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 217.136,
+      "price": 216.9475,
       "status": "ok",
       "trend30": [
         223.67,
@@ -139,15 +139,15 @@
         217.23,
         214.13,
         217.09,
-        217.136
+        216.9475
       ],
-      "ma50": 222.9309,
-      "distance50_pct": -2.6,
+      "ma50": 222.9272,
+      "distance50_pct": -2.68,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 203.2654,
-      "distance200_pct": 6.82,
+      "ma200": 203.2644,
+      "distance200_pct": 6.73,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -155,9 +155,9 @@
     {
       "ticker": "AMD",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 541.51,
+      "price": 540.1,
       "status": "ok",
       "trend30": [
         521.1,
@@ -189,15 +189,15 @@
         562.23,
         528.75,
         538.05,
-        541.51
+        540.1
       ],
-      "ma50": 539.6712,
-      "distance50_pct": 0.34,
+      "ma50": 539.643,
+      "distance50_pct": 0.08,
       "below50": false,
       "crossed_below50": false,
       "signal50": "AT / ABOVE",
-      "ma200": 397.4572,
-      "distance200_pct": 36.24,
+      "ma200": 397.4501,
+      "distance200_pct": 35.89,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -205,9 +205,9 @@
     {
       "ticker": "META",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 690.14,
+      "price": 689.97,
       "status": "ok",
       "trend30": [
         653.69,
@@ -239,15 +239,15 @@
         736.72,
         709.33,
         705.44,
-        690.14
+        689.97
       ],
-      "ma50": 659.4114,
-      "distance50_pct": 4.66,
+      "ma50": 659.408,
+      "distance50_pct": 4.63,
       "below50": false,
       "crossed_below50": false,
       "signal50": "AT / ABOVE",
-      "ma200": 632.4025,
-      "distance200_pct": 9.13,
+      "ma200": 632.4016,
+      "distance200_pct": 9.1,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -255,9 +255,9 @@
     {
       "ticker": "AVGO",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 335.13,
+      "price": 335.53,
       "status": "ok",
       "trend30": [
         364.38,
@@ -289,15 +289,15 @@
         344.33,
         328.75,
         334.59,
-        335.13
+        335.53
       ],
-      "ma50": 362.1168,
-      "distance50_pct": -7.45,
+      "ma50": 362.1248,
+      "distance50_pct": -7.34,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 368.067,
-      "distance200_pct": -8.95,
+      "ma200": 368.069,
+      "distance200_pct": -8.84,
       "below200": true,
       "crossed_below200": false,
       "signal200": "BELOW"
@@ -305,9 +305,9 @@
     {
       "ticker": "VOO",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 707.2,
+      "price": 707.081,
       "status": "ok",
       "trend30": [
         700.87,
@@ -339,15 +339,15 @@
         709.43,
         701.61,
         704.6,
-        707.2
+        707.081
       ],
-      "ma50": 706.4318,
-      "distance50_pct": 0.11,
+      "ma50": 706.4294,
+      "distance50_pct": 0.09,
       "below50": false,
       "crossed_below50": false,
       "signal50": "AT / ABOVE",
-      "ma200": 667.4677,
-      "distance200_pct": 5.95,
+      "ma200": 667.4671,
+      "distance200_pct": 5.93,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -355,9 +355,9 @@
     {
       "ticker": "SMH",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 549.85,
+      "price": 549.37,
       "status": "ok",
       "trend30": [
         574.29,
@@ -389,15 +389,15 @@
         558.84,
         539.79,
         548.46,
-        549.85
+        549.37
       ],
-      "ma50": 577.954,
-      "distance50_pct": -4.86,
+      "ma50": 577.9444,
+      "distance50_pct": -4.94,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 513.1699,
-      "distance200_pct": 7.15,
+      "ma200": 513.1675,
+      "distance200_pct": 7.05,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -405,9 +405,9 @@
     {
       "ticker": "DRAM",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 48.105,
+      "price": 48.04,
       "status": "ok",
       "trend30": [
         61.58,
@@ -439,10 +439,10 @@
         49.33,
         46.45,
         48.33,
-        48.105
+        48.04
       ],
-      "ma50": 57.0449,
-      "distance50_pct": -15.67,
+      "ma50": 57.0436,
+      "distance50_pct": -15.78,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
@@ -455,9 +455,9 @@
     {
       "ticker": "ASML",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 1639.01,
+      "price": 1636.9301,
       "status": "ok",
       "trend30": [
         1729.52,
@@ -489,15 +489,15 @@
         1657.4399,
         1641.52,
         1647.12,
-        1639.01
+        1636.9301
       ],
-      "ma50": 1735.8634,
-      "distance50_pct": -5.58,
+      "ma50": 1735.8218,
+      "distance50_pct": -5.7,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 1582.4785,
-      "distance200_pct": 3.57,
+      "ma200": 1582.4682,
+      "distance200_pct": 3.44,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -505,9 +505,9 @@
     {
       "ticker": "GOOG",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 336.7,
+      "price": 336.45,
       "status": "ok",
       "trend30": [
         328.38,
@@ -539,25 +539,25 @@
         344.91,
         336.91,
         340.16,
-        336.7
+        336.45
       ],
-      "ma50": 340.7966,
-      "distance50_pct": -1.2,
+      "ma50": 340.7916,
+      "distance50_pct": -1.27,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 339.366,
-      "distance200_pct": -0.79,
+      "ma200": 339.3648,
+      "distance200_pct": -0.86,
       "below200": true,
-      "crossed_below200": true,
-      "signal200": "CROSSED BELOW"
+      "crossed_below200": false,
+      "signal200": "BELOW"
     },
     {
       "ticker": "TSM",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 427.76,
+      "price": 427.975,
       "status": "ok",
       "trend30": [
         435.36,
@@ -589,15 +589,15 @@
         422.25,
         412.61,
         420.22,
-        427.76
+        427.975
       ],
-      "ma50": 434.5532,
-      "distance50_pct": -1.56,
+      "ma50": 434.5575,
+      "distance50_pct": -1.51,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 396.169,
-      "distance200_pct": 7.97,
+      "ma200": 396.1701,
+      "distance200_pct": 8.03,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -605,9 +605,9 @@
     {
       "ticker": "MU",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 909.13,
+      "price": 906.48,
       "status": "ok",
       "trend30": [
         1027.77,
@@ -639,15 +639,15 @@
         931.24,
         878.84,
         904.9,
-        909.13
+        906.48
       ],
-      "ma50": 984.627,
-      "distance50_pct": -7.67,
+      "ma50": 984.574,
+      "distance50_pct": -7.93,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 723.9052,
-      "distance200_pct": 25.59,
+      "ma200": 723.8919,
+      "distance200_pct": 25.22,
       "below200": false,
       "crossed_below200": false,
       "signal200": "AT / ABOVE"
@@ -655,9 +655,9 @@
     {
       "ticker": "IREN",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 26.675,
+      "price": 26.4886,
       "status": "ok",
       "trend30": [
         45.37,
@@ -689,15 +689,15 @@
         30.39,
         26.99,
         27.73,
-        26.675
+        26.4886
       ],
-      "ma50": 40.4799,
-      "distance50_pct": -34.1,
+      "ma50": 40.4762,
+      "distance50_pct": -34.56,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 45.2372,
-      "distance200_pct": -41.03,
+      "ma200": 45.2362,
+      "distance200_pct": -41.44,
       "below200": true,
       "crossed_below200": false,
       "signal200": "BELOW"
@@ -705,9 +705,9 @@
     {
       "ticker": "NBIS",
       "as_of_date": "2026-10-20",
-      "checked_at_utc": "2026-10-20T18:07:37+00:00",
+      "checked_at_utc": "2026-10-20T18:29:38+00:00",
       "price_mode": "indicative session quote (may be delayed)",
-      "price": 169.615,
+      "price": 169.5,
       "status": "ok",
       "trend30": [
         240.35,
@@ -739,15 +739,15 @@
         188.41,
         165.47,
         170.24,
-        169.615
+        169.5
       ],
-      "ma50": 222.1588,
-      "distance50_pct": -23.65,
+      "ma50": 222.1565,
+      "distance50_pct": -23.7,
       "below50": true,
       "crossed_below50": false,
       "signal50": "BELOW",
-      "ma200": 174.8708,
-      "distance200_pct": -3.01,
+      "ma200": 174.8702,
+      "distance200_pct": -3.07,
       "below200": true,
       "crossed_below200": false,
       "signal200": "BELOW"
