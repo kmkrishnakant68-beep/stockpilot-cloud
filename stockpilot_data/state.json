@@ -12,7 +12,7 @@
     "below200": false
   },
   "AMD": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "META": {
