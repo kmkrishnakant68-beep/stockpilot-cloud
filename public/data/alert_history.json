@@ -1,6 +1,38 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-10-22T18:10:45+00:00",
+      "ticker": "ASML",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": "1576.5601",
+      "moving_average": "1586.3521",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-10-22T18:10:45+00:00",
+      "ticker": "VOO",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "700.75",
+      "moving_average": "706.2814",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-10-22T18:10:45+00:00",
+      "ticker": "META",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "645.15",
+      "moving_average": "662.7876",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-10-22T18:10:45+00:00",
+      "ticker": "AMD",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "509.99",
+      "moving_average": "541.645",
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
       "checked_at_utc": "2026-10-20T21:55:52+00:00",
       "ticker": "AMD",
       "event": "CROSSED BELOW 50D SMA",
