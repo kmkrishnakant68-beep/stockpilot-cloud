@@ -37,7 +37,7 @@
   },
   "ASML": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "GOOG": {
     "below50": true,
