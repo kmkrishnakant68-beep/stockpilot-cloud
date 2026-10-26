@@ -1,4 +1,21 @@
 {
-  "generated_at_utc": "2026-10-26T19:35:27+00:00",
-  "alerts": []
+  "generated_at_utc": "2026-10-26T19:58:33+00:00",
+  "alerts": [
+    {
+      "checked_at_utc": "2026-10-26T19:58:33+00:00",
+      "ticker": "META",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 628.88,
+      "moving_average": 632.4416,
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-10-26T19:58:33+00:00",
+      "ticker": "ASML",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 1589.4,
+      "moving_average": 1589.964,
+      "price_mode": "indicative session quote (may be delayed)"
+    }
+  ]
 }

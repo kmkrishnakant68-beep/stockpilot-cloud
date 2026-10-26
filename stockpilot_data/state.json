@@ -17,7 +17,7 @@
   },
   "META": {
     "below50": true,
-    "below200": false
+    "below200": true
   },
   "AVGO": {
     "below50": true,
@@ -37,7 +37,7 @@
   },
   "ASML": {
     "below50": true,
-    "below200": false
+    "below200": true
   },
   "GOOG": {
     "below50": true,
