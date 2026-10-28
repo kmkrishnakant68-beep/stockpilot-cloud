@@ -1,6 +1,30 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-10-28T00:04:01+00:00",
+      "ticker": "TSM",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "424.37",
+      "moving_average": "434.081",
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-10-28T00:04:01+00:00",
+      "ticker": "VOO",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "703.41",
+      "moving_average": "705.781",
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-10-28T00:04:01+00:00",
+      "ticker": "AMD",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "531.28",
+      "moving_average": "542.6172",
+      "price_mode": "completed daily close"
+    },
+    {
       "checked_at_utc": "2026-10-27T19:00:26+00:00",
       "ticker": "META",
       "event": "CROSSED BELOW 200D SMA",

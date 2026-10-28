@@ -19,3 +19,6 @@ checked_at_utc,ticker,event,price,moving_average,price_mode
 2026-10-26T19:58:33+00:00,META,CROSSED BELOW 200D SMA,628.88,632.4416,indicative session quote (may be delayed)
 2026-10-26T19:58:33+00:00,ASML,CROSSED BELOW 200D SMA,1589.4,1589.964,indicative session quote (may be delayed)
 2026-10-27T19:00:26+00:00,META,CROSSED BELOW 200D SMA,622.505,632.2972,indicative session quote (may be delayed)
+2026-10-28T00:04:01+00:00,AMD,CROSSED BELOW 50D SMA,531.28,542.6172,completed daily close
+2026-10-28T00:04:01+00:00,VOO,CROSSED BELOW 50D SMA,703.41,705.781,completed daily close
+2026-10-28T00:04:01+00:00,TSM,CROSSED BELOW 50D SMA,424.37,434.081,completed daily close

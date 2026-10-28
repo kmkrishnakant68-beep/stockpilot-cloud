@@ -12,7 +12,7 @@
     "below200": false
   },
   "AMD": {
-    "below50": false,
+    "below50": true,
     "below200": false
   },
   "META": {
@@ -24,7 +24,7 @@
     "below200": true
   },
   "VOO": {
-    "below50": false,
+    "below50": true,
     "below200": false
   },
   "SMH": {
@@ -44,7 +44,7 @@
     "below200": true
   },
   "TSM": {
-    "below50": false,
+    "below50": true,
     "below200": false
   },
   "MU": {
