@@ -48,7 +48,7 @@
     "below200": false
   },
   "MU": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "IREN": {
