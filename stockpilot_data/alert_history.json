@@ -1,6 +1,22 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-10-29T00:27:23+00:00",
+      "ticker": "NBIS",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": "170.47",
+      "moving_average": "176.5235",
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-10-29T00:27:23+00:00",
+      "ticker": "MU",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "928.76",
+      "moving_average": "979.7082",
+      "price_mode": "completed daily close"
+    },
+    {
       "checked_at_utc": "2026-10-28T00:04:01+00:00",
       "ticker": "TSM",
       "event": "CROSSED BELOW 50D SMA",

@@ -22,3 +22,5 @@ checked_at_utc,ticker,event,price,moving_average,price_mode
 2026-10-28T00:04:01+00:00,AMD,CROSSED BELOW 50D SMA,531.28,542.6172,completed daily close
 2026-10-28T00:04:01+00:00,VOO,CROSSED BELOW 50D SMA,703.41,705.781,completed daily close
 2026-10-28T00:04:01+00:00,TSM,CROSSED BELOW 50D SMA,424.37,434.081,completed daily close
+2026-10-29T00:27:23+00:00,MU,CROSSED BELOW 50D SMA,928.76,979.7082,completed daily close
+2026-10-29T00:27:23+00:00,NBIS,CROSSED BELOW 200D SMA,170.47,176.5235,completed daily close
