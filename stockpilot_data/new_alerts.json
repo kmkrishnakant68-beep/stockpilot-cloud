@@ -1,21 +1,4 @@
 {
-  "generated_at_utc": "2026-10-29T19:15:12+00:00",
-  "alerts": [
-    {
-      "checked_at_utc": "2026-10-29T19:15:12+00:00",
-      "ticker": "VOO",
-      "event": "CROSSED BELOW 50D SMA",
-      "price": 705.4,
-      "moving_average": 705.7858,
-      "price_mode": "indicative session quote (may be delayed)"
-    },
-    {
-      "checked_at_utc": "2026-10-29T19:15:12+00:00",
-      "ticker": "TSM",
-      "event": "CROSSED BELOW 50D SMA",
-      "price": 429.614,
-      "moving_average": 435.0715,
-      "price_mode": "indicative session quote (may be delayed)"
-    }
-  ]
+  "generated_at_utc": "2026-10-29T19:40:46+00:00",
+  "alerts": []
 }

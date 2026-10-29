@@ -24,7 +24,7 @@
     "below200": true
   },
   "VOO": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "SMH": {
