@@ -9,7 +9,7 @@
   },
   "NVDA": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "AMD": {
     "below50": true,
@@ -29,7 +29,7 @@
   },
   "SMH": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "DRAM": {
     "below50": true,
