@@ -44,11 +44,11 @@
     "below200": true
   },
   "TSM": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "MU": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "IREN": {
@@ -57,6 +57,6 @@
   },
   "NBIS": {
     "below50": true,
-    "below200": true
+    "below200": false
   }
 }
