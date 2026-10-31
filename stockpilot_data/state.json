@@ -12,7 +12,7 @@
     "below200": false
   },
   "AMD": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "META": {
@@ -24,7 +24,7 @@
     "below200": true
   },
   "VOO": {
-    "below50": true,
+    "below50": false,
     "below200": false
   },
   "SMH": {
@@ -37,7 +37,7 @@
   },
   "ASML": {
     "below50": true,
-    "below200": true
+    "below200": false
   },
   "GOOG": {
     "below50": true,
