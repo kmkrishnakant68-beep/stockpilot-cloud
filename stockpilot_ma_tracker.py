@@ -77,6 +77,8 @@ def moving_average_result(
     if history.empty or "Close" not in history:
         raise ValueError("No daily price history returned")
 
+    history = history.sort_index()
+    history = history.loc[~history.index.duplicated(keep="last")]
     closes = pd.to_numeric(history["Close"], errors="coerce").dropna()
     closes = closes[closes > 0]
     if len(closes) < 51:
@@ -101,6 +103,7 @@ def moving_average_result(
         closes = closes.reset_index(drop=True)
         bar_day = str(history_day)
 
+    validate_observation({"as_of_date": bar_day, "price_mode": mode}, prior)
     latest_price = float(closes.iloc[-1])
     result = {
         "ticker": symbol,
@@ -164,19 +167,46 @@ def save_json(path: Path, payload: object) -> None:
     temp.replace(path)
 
 
+def validate_observation(record: dict, prior: dict | None) -> None:
+    """Never move a symbol's observation window backwards."""
+    prior = prior or {}
+    prior_day = prior.get("as_of_date")
+    day = record["as_of_date"]
+    if prior_day and day < prior_day:
+        raise ValueError(f"Stale observation {day}; latest accepted date is {prior_day}")
+    if (day == prior_day
+            and prior.get("price_mode") == "completed daily close"
+            and record.get("price_mode") != "completed daily close"):
+        raise ValueError("Cannot replace a completed close with a provisional quote")
+
+
+def observation_state(record: dict) -> dict:
+    return {key: record.get(key) for key in
+            ("below50", "below200", "as_of_date", "price_mode", "checked_at_utc")}
+
+
 def run_once(symbols: list[str], output: Path) -> None:
     output.mkdir(parents=True, exist_ok=True)
     state_path = output / "state.json"
     state = load_state(state_path)
+    previous = {r["ticker"]: r for r in
+                load_state(output / "latest_signals.json").get("stocks", [])
+                if r.get("status") == "ok"}
+    # Upgrade legacy boolean-only state using the matching published snapshot.
+    for symbol, record in previous.items():
+        if not state.get(symbol, {}).get("as_of_date"):
+            state[symbol] = observation_state(record)
     now = datetime.now(timezone.utc)
     results = []
     alerts = []
+    accepted = 0
 
     for symbol in symbols:
         try:
             record = fetch_and_analyze(symbol, now, state.get(symbol))
-            state[symbol] = {"below50": record["below50"],
-                             "below200": record["below200"]}
+            validate_observation(record, state.get(symbol))
+            state[symbol] = observation_state(record)
+            accepted += 1
             for window in (50, 200):
                 if record[f"crossed_below{window}"]:
                     alerts.append({
@@ -188,11 +218,23 @@ def run_once(symbols: list[str], output: Path) -> None:
                         "price_mode": record["price_mode"],
                     })
         except Exception as exc:
-            record = {"ticker": symbol, "status": f"ERROR: {exc}"}
+            if symbol in previous:
+                record = dict(previous[symbol])
+                record.update(refresh_error=str(exc),
+                              refresh_attempted_at_utc=now.isoformat(timespec="seconds"))
+                # Retained observations are not new crossing events.
+                for window in (50, 200):
+                    record[f"crossed_below{window}"] = False
+                    record[f"signal{window}"] = (
+                        "INSUFFICIENT HISTORY" if record.get(f"below{window}") is None
+                        else "BELOW" if record[f"below{window}"] else "AT / ABOVE")
+            else:
+                record = {"ticker": symbol, "status": f"ERROR: {exc}"}
+            print(f"WARNING: {symbol}: {exc}")
         results.append(record)
 
-    if not any(r.get("status") == "ok" for r in results):
-        raise RuntimeError("No price histories could be fetched. Preserving previously published data; check Yahoo Finance availability and rate limits.")
+    if not accepted:
+        raise RuntimeError("No acceptable price histories. Preserving previously published data and state; check scan warnings for stale data or provider errors.")
 
     columns = ["ticker", "as_of_date", "price", "ma50", "ma200",
                "distance50_pct", "distance200_pct", "signal50", "signal200",

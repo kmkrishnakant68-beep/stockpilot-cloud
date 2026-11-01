@@ -49,3 +49,29 @@ GitHub stores these as masked encrypted secrets in Actions, not as files in the 
 - GitHub Free includes a monthly Actions minutes quota for *private* repositories, while standard GitHub-hosted Actions minutes are free for public repositories. Check current GitHub docs for details. Public repo schedules can be auto-disabled after 60 days of inactivity, although bot commits usually update the repository; check workflow settings if scans stop.
 - This cloud kit runs separately from the original private StockPilot site. To integrate results into that site, its backend would need to fetch and authorize the generated data, or the original app would need a deployment update; this package does not directly change that app.
 - If requests are rate-limited or scans are slow, reduce the watchlist or run the workflow less often. Never depend on this tool for time-critical order execution.
+
+## Observation ordering and October 31 repair
+
+Alerts intentionally cover **downward crossings only** (`previously_below is False`
+and `is_below is True`). Moving from below to at/above an SMA does not emit an alert.
+
+The October 31 00:09 UTC refresh (`6f6cfe7`) replaced October 30 observations
+from `43cc1a2` with October 29 observations for all 15 symbols. AMD/VOO's 50-day
+and ASML's 200-day state changed from below to above because the window moved
+backwards, not because a new recovery was observed. Both commits had empty
+`new_alerts.json` arrays. The false `crossed_below` fields were correct for the
+existing downward-only rule; accepting the older data and resetting state was not.
+This repair restores the October 30 JSON/CSV snapshots (including the public copy)
+and state without manufacturing recovery alerts or replaying historical alerts.
+
+State now includes the observation date, price mode and check timestamp. Older
+observations are rejected before comparison or state mutation; a provisional quote
+cannot replace a same-date completed close. Legacy state is upgraded from the
+published snapshot. A partial failure retains that symbol's last accepted snapshot
+with `refresh_error` and `refresh_attempted_at_utc`; retained crossing flags are
+cleared. If every symbol fails freshness/fetch validation, the scan fails without
+writing outputs, so the workflow does not send alerts or publish regressed data.
+The provider's reason for returning an older window is not established by the
+stored snapshots; this guard protects against that regression regardless of cause.
+
+Run deterministic regression tests with `python -m unittest discover -s tests -v`.
