@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-02T22:54:52+00:00",
+  "generated_at_utc": "2026-11-02T23:07:47+00:00",
   "provider": "Yahoo Finance via yfinance (quotes may be delayed)",
   "stocks": [
     {
       "ticker": "MSFT",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 507.12,
       "status": "ok",
@@ -44,8 +44,8 @@
       "ma50": 513.3882,
       "distance50_pct": -1.22,
       "below50": true,
-      "crossed_below50": true,
-      "signal50": "CROSSED BELOW",
+      "crossed_below50": false,
+      "signal50": "BELOW",
       "ma200": 438.1788,
       "distance200_pct": 15.73,
       "below200": false,
@@ -55,7 +55,7 @@
     {
       "ticker": "GOOGL",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 278.99,
       "status": "ok",
@@ -105,7 +105,7 @@
     {
       "ticker": "NVDA",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 202.06,
       "status": "ok",
@@ -149,13 +149,13 @@
       "ma200": 204.4596,
       "distance200_pct": -1.17,
       "below200": true,
-      "crossed_below200": true,
-      "signal200": "CROSSED BELOW"
+      "crossed_below200": false,
+      "signal200": "BELOW"
     },
     {
       "ticker": "AMD",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 466.84,
       "status": "ok",
@@ -205,7 +205,7 @@
     {
       "ticker": "META",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 606.73,
       "status": "ok",
@@ -255,7 +255,7 @@
     {
       "ticker": "AVGO",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 322.23,
       "status": "ok",
@@ -305,7 +305,7 @@
     {
       "ticker": "VOO",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 691.32,
       "status": "ok",
@@ -355,7 +355,7 @@
     {
       "ticker": "SMH",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 508.31,
       "status": "ok",
@@ -399,13 +399,13 @@
       "ma200": 520.0605,
       "distance200_pct": -2.26,
       "below200": true,
-      "crossed_below200": true,
-      "signal200": "CROSSED BELOW"
+      "crossed_below200": false,
+      "signal200": "BELOW"
     },
     {
       "ticker": "DRAM",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 46.32,
       "status": "ok",
@@ -455,7 +455,7 @@
     {
       "ticker": "ASML",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 1526.14,
       "status": "ok",
@@ -505,7 +505,7 @@
     {
       "ticker": "GOOG",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 278.04,
       "status": "ok",
@@ -555,7 +555,7 @@
     {
       "ticker": "TSM",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 398.63,
       "status": "ok",
@@ -599,13 +599,13 @@
       "ma200": 400.4474,
       "distance200_pct": -0.45,
       "below200": true,
-      "crossed_below200": true,
-      "signal200": "CROSSED BELOW"
+      "crossed_below200": false,
+      "signal200": "BELOW"
     },
     {
       "ticker": "MU",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 833.59,
       "status": "ok",
@@ -655,7 +655,7 @@
     {
       "ticker": "IREN",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 22.02,
       "status": "ok",
@@ -705,7 +705,7 @@
     {
       "ticker": "NBIS",
       "as_of_date": "2026-11-02",
-      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "checked_at_utc": "2026-11-02T23:07:47+00:00",
       "price_mode": "completed daily close",
       "price": 141.39,
       "status": "ok",
