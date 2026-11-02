@@ -34,3 +34,7 @@ checked_at_utc,ticker,event,price,moving_average,price_mode
 2026-10-30T18:53:20+00:00,TSM,CROSSED BELOW 50D SMA,400.29,434.8012,indicative session quote (may be delayed)
 2026-10-30T18:53:20+00:00,MU,CROSSED BELOW 50D SMA,862.66,978.2674,indicative session quote (may be delayed)
 2026-10-30T18:53:20+00:00,NBIS,CROSSED BELOW 200D SMA,151.08,177.4768,indicative session quote (may be delayed)
+2026-11-02T22:54:52+00:00,MSFT,CROSSED BELOW 50D SMA,507.12,513.3882,completed daily close
+2026-11-02T22:54:52+00:00,NVDA,CROSSED BELOW 200D SMA,202.06,204.4596,completed daily close
+2026-11-02T22:54:52+00:00,SMH,CROSSED BELOW 200D SMA,508.31,520.0605,completed daily close
+2026-11-02T22:54:52+00:00,TSM,CROSSED BELOW 200D SMA,398.63,400.4474,completed daily close

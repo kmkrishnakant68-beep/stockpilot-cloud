@@ -1,4 +1,37 @@
 {
-  "generated_at_utc": "2026-10-31T00:09:21+00:00",
-  "alerts": []
+  "generated_at_utc": "2026-11-02T22:54:52+00:00",
+  "alerts": [
+    {
+      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "ticker": "MSFT",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": 507.12,
+      "moving_average": 513.3882,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "ticker": "NVDA",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 202.06,
+      "moving_average": 204.4596,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "ticker": "SMH",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 508.31,
+      "moving_average": 520.0605,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-02T22:54:52+00:00",
+      "ticker": "TSM",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 398.63,
+      "moving_average": 400.4474,
+      "price_mode": "completed daily close"
+    }
+  ]
 }
