@@ -1,4 +1,21 @@
 {
-  "generated_at_utc": "2026-11-03T21:03:45+00:00",
-  "alerts": []
+  "generated_at_utc": "2026-11-04T20:57:14+00:00",
+  "alerts": [
+    {
+      "checked_at_utc": "2026-11-04T20:57:14+00:00",
+      "ticker": "NVDA",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 200.1883,
+      "moving_average": 204.6725,
+      "price_mode": "indicative session quote (may be delayed)"
+    },
+    {
+      "checked_at_utc": "2026-11-04T20:57:14+00:00",
+      "ticker": "TSM",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 394.36,
+      "moving_average": 401.0954,
+      "price_mode": "indicative session quote (may be delayed)"
+    }
+  ]
 }
