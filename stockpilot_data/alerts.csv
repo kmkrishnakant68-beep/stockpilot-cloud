@@ -40,3 +40,5 @@ checked_at_utc,ticker,event,price,moving_average,price_mode
 2026-11-02T22:54:52+00:00,TSM,CROSSED BELOW 200D SMA,398.63,400.4474,completed daily close
 2026-11-04T20:57:14+00:00,NVDA,CROSSED BELOW 200D SMA,200.1883,204.6725,indicative session quote (may be delayed)
 2026-11-04T20:57:14+00:00,TSM,CROSSED BELOW 200D SMA,394.36,401.0954,indicative session quote (may be delayed)
+2026-11-05T21:14:33+00:00,AMD,CROSSED BELOW 200D SMA,404.4,415.0009,completed daily close
+2026-11-05T21:14:33+00:00,MU,CROSSED BELOW 200D SMA,656.39,755.2631,completed daily close
