@@ -1,107 +1,107 @@
 {
   "MSFT": {
-    "below50": false,
+    "below50": true,
     "below200": false,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "GOOGL": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "NVDA": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "AMD": {
     "below50": true,
     "below200": false,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "META": {
     "below50": true,
-    "below200": false,
-    "as_of_date": "2026-11-13",
+    "below200": true,
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-13T21:26:54+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "AVGO": {
-    "below50": false,
+    "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "VOO": {
     "below50": true,
     "below200": false,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "SMH": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "DRAM": {
     "below50": true,
     "below200": null,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-13T21:26:54+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "ASML": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "GOOG": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-13T21:26:54+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "TSM": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "MU": {
     "below50": true,
-    "below200": false,
-    "as_of_date": "2026-11-13",
+    "below200": true,
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-14T01:51:51+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "IREN": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-13T21:26:54+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   },
   "NBIS": {
     "below50": true,
     "below200": true,
-    "as_of_date": "2026-11-13",
+    "as_of_date": "2026-11-16",
     "price_mode": "completed daily close",
-    "checked_at_utc": "2026-11-13T21:26:54+00:00"
+    "checked_at_utc": "2026-11-16T23:31:42+00:00"
   }
 }

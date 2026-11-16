@@ -1,4 +1,37 @@
 {
-  "generated_at_utc": "2026-11-14T01:51:51+00:00",
-  "alerts": []
+  "generated_at_utc": "2026-11-16T23:31:42+00:00",
+  "alerts": [
+    {
+      "checked_at_utc": "2026-11-16T23:31:42+00:00",
+      "ticker": "MSFT",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": 517.99,
+      "moving_average": 519.363,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-16T23:31:42+00:00",
+      "ticker": "META",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 626.41,
+      "moving_average": 630.3169,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-16T23:31:42+00:00",
+      "ticker": "AVGO",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": 333.4,
+      "moving_average": 344.8926,
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-16T23:31:42+00:00",
+      "ticker": "MU",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": 719.02,
+      "moving_average": 767.1272,
+      "price_mode": "completed daily close"
+    }
+  ]
 }
