@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-18T22:22:23+00:00",
+  "generated_at_utc": "2026-11-18T22:37:39+00:00",
   "provider": "Yahoo Finance via yfinance (quotes may be delayed)",
   "stocks": [
     {
       "ticker": "MSFT",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 508.29,
       "status": "ok",
@@ -55,7 +55,7 @@
     {
       "ticker": "GOOGL",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 282.44,
       "status": "ok",
@@ -105,7 +105,7 @@
     {
       "ticker": "NVDA",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 150.96,
       "status": "ok",
@@ -155,7 +155,7 @@
     {
       "ticker": "AMD",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 530.14,
       "status": "ok",
@@ -205,7 +205,7 @@
     {
       "ticker": "META",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 616.38,
       "status": "ok",
@@ -255,7 +255,7 @@
     {
       "ticker": "AVGO",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 354.05,
       "status": "ok",
@@ -305,7 +305,7 @@
     {
       "ticker": "VOO",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 671.31,
       "status": "ok",
@@ -355,7 +355,7 @@
     {
       "ticker": "SMH",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 459.54,
       "status": "ok",
@@ -405,7 +405,7 @@
     {
       "ticker": "DRAM",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 39.15,
       "status": "ok",
@@ -455,7 +455,7 @@
     {
       "ticker": "ASML",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 1395.27,
       "status": "ok",
@@ -505,7 +505,7 @@
     {
       "ticker": "GOOG",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 279.2,
       "status": "ok",
@@ -555,7 +555,7 @@
     {
       "ticker": "TSM",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 362.62,
       "status": "ok",
@@ -605,7 +605,7 @@
     {
       "ticker": "MU",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 705.27,
       "status": "ok",
@@ -655,7 +655,7 @@
     {
       "ticker": "IREN",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 15.24,
       "status": "ok",
@@ -705,7 +705,7 @@
     {
       "ticker": "NBIS",
       "as_of_date": "2026-11-18",
-      "checked_at_utc": "2026-11-18T22:22:23+00:00",
+      "checked_at_utc": "2026-11-18T22:37:39+00:00",
       "price_mode": "completed daily close",
       "price": 106.96,
       "status": "ok",
