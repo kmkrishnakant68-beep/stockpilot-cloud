@@ -1,6 +1,22 @@
 {
   "alerts": [
     {
+      "checked_at_utc": "2026-11-20T21:59:08+00:00",
+      "ticker": "AVGO",
+      "event": "CROSSED BELOW 50D SMA",
+      "price": "304.41",
+      "moving_average": "342.7116",
+      "price_mode": "completed daily close"
+    },
+    {
+      "checked_at_utc": "2026-11-20T21:59:08+00:00",
+      "ticker": "AMD",
+      "event": "CROSSED BELOW 200D SMA",
+      "price": "424.39",
+      "moving_average": "429.7861",
+      "price_mode": "completed daily close"
+    },
+    {
       "checked_at_utc": "2026-11-17T22:40:59+00:00",
       "ticker": "VOO",
       "event": "CROSSED BELOW 200D SMA",
