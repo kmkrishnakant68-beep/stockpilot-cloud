@@ -52,3 +52,4 @@ checked_at_utc,ticker,event,price,moving_average,price_mode
 2026-11-17T22:40:59+00:00,VOO,CROSSED BELOW 200D SMA,673.19,673.3911,completed daily close
 2026-11-20T21:59:08+00:00,AMD,CROSSED BELOW 200D SMA,424.39,429.7861,completed daily close
 2026-11-20T21:59:08+00:00,AVGO,CROSSED BELOW 50D SMA,304.41,342.7116,completed daily close
+2026-11-24T23:39:24+00:00,AMD,CROSSED BELOW 200D SMA,413.27,431.9976,completed daily close
